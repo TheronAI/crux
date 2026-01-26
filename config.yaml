@@ -1,0 +1,34 @@
+data:
+  path: "data/MiniPile_DensityTiny"
+  dataset: "Marcus2112/minipile_density-proportioned_tiny" # 853,467 (843k train, 500 val, 10k test)
+  seq_len: 512
+  batch_size: 8
+
+training:
+  output_dir: "results/light"
+  num_steps: 100000 # 100k steps ~ 1 epoch
+  learning_rate: 0.008
+  learning_rate_norm_bias: 0.0004
+  warmup_steps: 4000
+  min_lr_ratio: 0.001
+  grad_clip: 1.0
+  grad_accum_steps: 32
+  weight_decay: 0.05
+  eval_interval: 1000
+  save_interval: 10000
+  log_interval: 50
+  compile: True
+  use_amp: True
+
+model:
+  hidden_size: 384
+  intermediate_size: 768
+  num_layers: 10
+  num_heads: 8
+  dropout: 0.1
+  diffusion_steps: 32
+  snr_min: -8.0
+  snr_max: 8.0
+  use_mask_token: True
+  recursive_depth: 4
+  gradient_checkpointing: True

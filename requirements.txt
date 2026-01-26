@@ -1,0 +1,15 @@
+torch
+transformers
+datasets
+tqdm
+numpy
+matplotlib
+lm-eval
+huggingface-hub
+pyyaml
+
+# Development
+#wandb
+#pytest>=7.0.0
+#black>=23.0.0
+#ruff>=0.1.0

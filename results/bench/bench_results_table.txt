@@ -1,0 +1,7 @@
+|  Tasks   |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|----------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_easy  |      1|none  |     0|acc     |↑  |0.2445|±  |0.0088|
+|          |       |none  |     0|acc_norm|↑  |0.2508|±  |0.0089|
+|hellaswag |      1|none  |     0|acc     |↑  |0.2504|±  |0.0043|
+|          |       |none  |     0|acc_norm|↑  |0.2543|±  |0.0043|
+|winogrande|      1|none  |     0|acc     |↑  |0.4830|±  |0.0140|
